@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    transition: all .3s ease;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.section {
+    display: flex;
+}
+
+.pOwner {
+    color: #525252;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.sidebar {
+    width: 6.4rem;
+    height: 100vh;
+    background-color: #21222D;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.sidebar::before {
+    content: '';
+    width: 35px;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    margin-left: 5.5rem;
+    border-radius: 12px 0px 0px 12px;
+    top: 0;
+}
+
+.content {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    z-index: 10;
+}
+
+.logo-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    margin-left: 1rem;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.table-css{
+    width: 1325px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.nomor{
+    font-size: 14px;
+    background: linear-gradient(to right, #704CFF, #9747FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+.tabletr{
+    background: linear-gradient(to right, #704CFF, #9747FF);
+    color: #fff;
+    border-radius: 100px;
+}
+
+.tabletr th{
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 13px 3px;
+}
+
+.tabletr2 td{
+    font-weight: 400;
+    font-size: 13px;
+    padding: 7px 0px;
+    color: #525252;
+    font-weight: 600;
+    padding: 35px 6px;
+}
+
+.tabletr2:nth-child(even) td {
+    background-color: #F9F9F9;
+}
+
+.tabletr2:nth-child(odd) td {
+    background-color: #fff;
+}
+
+.table-scroll{
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
